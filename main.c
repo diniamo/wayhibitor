@@ -11,7 +11,7 @@ struct wl_surface *surface = NULL;
 struct zwp_idle_inhibit_manager_v1 *inhibit_manager = NULL;
 struct zwp_idle_inhibitor_v1 *inhibitor = NULL;
 
-void global_registry_handler(void * data,
+void global_registry_handler(void *data,
                              struct wl_registry *registry,
                              uint32_t id,
                              const char *interface,
