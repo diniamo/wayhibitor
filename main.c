@@ -16,10 +16,10 @@ void global_registry_handler(void *data,
                              uint32_t id,
                              const char *interface,
                              uint32_t version) {
-  if (strcmp(interface, "wl_compositor") == 0) {
+  if (strcmp(interface, wl_compositor_interface.name) == 0) {
     compositor = wl_registry_bind(registry, id, &wl_compositor_interface, 6);
     surface = wl_compositor_create_surface(compositor);
-  } else if (strcmp(interface, "zwp_idle_inhibit_manager_v1") == 0) {
+  } else if (strcmp(interface, zwp_idle_inhibit_manager_v1_interface.name) == 0) {
     inhibit_manager = wl_registry_bind(registry, id, &zwp_idle_inhibit_manager_v1_interface, 1);
   }
 }
