@@ -28,7 +28,7 @@
       };
     in {
       default = package;
-      wayland-idle-inhibitor = package;
+      wayhibitor = package;
     });
   };
 }

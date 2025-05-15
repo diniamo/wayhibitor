@@ -10,7 +10,7 @@ stdenv.mkDerivation {
 
   meta = {
     description = "Manual wayland idle inhibitor written in C";
-    homepage = "https://github.com/diniamo/wayland-idle-inhibitor";
+    homepage = "https://github.com/diniamo/wayhibitor";
     license = lib.licenses.eupl12;
     platforms = lib.platforms.unix;
     maintainers = [lib.maintainers.diniamo];
