@@ -8,7 +8,7 @@ TARGET := wayhibitor
 
 build:
 	mkdir -p build
-	$(CC) $(CFLAGS) $(LIBS) -o build/$(TARGET) $(SRCS)
+	$(CC) $(CFLAGS) -o build/$(TARGET) $(SRCS) $(LIBS)
 
 run: build
 	build/$(TARGET)
